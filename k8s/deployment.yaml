@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parrot-${LABEL_VERSION}
+  namespace: eks-blue-green
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: parrot
+      version: ${LABEL_VERSION}
+  template:
+    metadata:
+      labels:
+        app: parrot
+        version: ${LABEL_VERSION}
+    spec:
+      containers:
+      - name: parrot
+        image: ${DOCKER_IMAGE}
+        ports:
+        - containerPort: 3000

@@ -1,0 +1,13 @@
+.ignore
+node_modules
+package-lock.json
+.terraform
+.terraform.lock.hcl
+terraform.plan
+terraform.tfvars
+tfplan
+*.tfstate
+*.tfstate.backup
+.key
+.ecr
+kubeconfig_*

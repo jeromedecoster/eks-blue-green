@@ -1,0 +1,18 @@
+{
+  "name": "parrot",
+  "version": "1.0.0",
+  "description": "parrot",
+  "repository": "parrot",
+  "main": "server.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {}
+}
